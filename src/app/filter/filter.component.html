@@ -1,0 +1,42 @@
+<div class="pt-6">
+    <h3 class="text-lg font-semibold text-gray-900">Color</h3>
+    <ul class="mt-2">
+        <li *ngFor="let color of colorList" class="flex items-center justify-between py-2">
+            <div class="flex items-center">
+                <input id="color-white" name="color[]" type="checkbox"
+                    class="h-4 w-4 rounded border-gray-300 text-black focus:ring-black" value="white" />
+                <label for="color-white" class="ml-3 text-sm font-medium text-gray-900">
+                    {{color}}
+                </label>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="pt-6">
+    <h3 class="text-lg font-semibold text-gray-900">Category</h3>
+    <ul class="mt-2">
+        <li *ngFor="let productCategory of productCategoryList" class="flex items-center justify-between py-2">
+            <div class="flex items-center">
+                <input id="sizes-xs" name="sizes[]" type="checkbox"
+                    class="h-4 w-4 rounded border-gray-300 text-black focus:ring-black" value="xs" />
+                <label for="sizes-xs" class="ml-3 text-sm font-medium text-gray-900">
+                    {{productCategory}}
+                </label>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="pt-6">
+    <h3 class="text-lg font-semibold text-gray-900">Sizes</h3>
+    <ul class="mt-2">
+        <li *ngFor="let size of sizeList" class="flex items-center justify-between py-2">
+            <div class="flex items-center">
+                <input id="category-new-arrivals" name="category[]" type="checkbox"
+                    class="h-4 w-4 rounded border-gray-300 text-black focus:ring-black" value="new-arrivals" />
+                <label for="category-new-arrivals" class="ml-3 text-sm font-medium text-gray-900">
+                    {{size}}
+                </label>
+            </div>
+        </li>
+    </ul>
+</div>
